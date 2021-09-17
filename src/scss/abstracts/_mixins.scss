@@ -1,0 +1,36 @@
+//media queries
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+//multi purposed flex mixin
+@mixin flex($direction: row, $justify: start, $align: normal) {
+  display: flex;
+  flex-wrap: wrap;
+  @if $direction != row {
+    flex-direction: $direction;
+  }
+  @if $justify != start {
+    justify-content: $justify;
+  }
+  @if $align != normal {
+    align-items: $align;
+  }
+}
+
+//primary colored background mixin
+@mixin background-primary {
+  background: $primary-background-300;
+}
+
+//default padding mixin
+@mixin padding($size: 1rem) {
+  padding: $size;
+}
