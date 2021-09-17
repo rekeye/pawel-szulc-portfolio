@@ -1,6 +1,11 @@
 //media queries
-@mixin tablet {
+@mixin tablet-desktop {
   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
     @content;
   }
 }
@@ -32,5 +37,9 @@
 
 //default padding mixin
 @mixin padding($size: 1rem) {
-  padding: $size;
+  padding: 0 $size;
+}
+
+@mixin text-center {
+  text-align: center;
 }

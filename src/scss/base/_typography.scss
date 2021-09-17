@@ -9,16 +9,15 @@ h4 {
   font-weight: 450;
   margin: 0.25rem 0;
 }
-h1 {
-  font-family: $display-font-family;
-  font-size: $h1-font-size;
-}
 h2,
 h3,
 h4,
 a,
 button {
   font-family: $heading-font-family;
+}
+h1 {
+  font-size: $h1-font-size;
 }
 h2 {
   font-size: $h2-font-size;

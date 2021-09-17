@@ -1,0 +1,21 @@
+.nav {
+  display: none;
+  width: 100%;
+  transform: translateX(100%);
+  transition: all 0.3s linear;
+  &--open {
+    @include flex(column, $align: center);
+    transform: translateX(0);
+  }
+  a {
+    padding: 0.5rem 0;
+  }
+  @include tablet {
+    @include flex;
+    width: auto;
+    transform: translateX(0);
+    a {
+      padding: 0 1rem;
+    }
+  }
+}

@@ -1,7 +1,9 @@
+require("dotenv").config();
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "Pawel Szulc | Portfolio",
+    title: "Paweł Szulc",
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -24,7 +26,7 @@ module.exports = {
         // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
         fieldName: "Project",
         // Url to query from
-        url: "https://api-eu-central-1.graphcms.com/v2/ckto5qx0u0tfm01yzg1j4a85i/master",
+        url: process.env.GRAPH_CMS_URL,
       },
     },
   ],
