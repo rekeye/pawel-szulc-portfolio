@@ -1,5 +1,5 @@
 body {
-  color: $primary-font;
+  color: $white;
   font-family: $base-font-family;
 }
 h1,
@@ -7,14 +7,15 @@ h2,
 h3,
 h4 {
   font-weight: 450;
-  margin: 0.25rem 0;
+  padding: 0.25rem 0;
 }
+h1,
 h2,
 h3,
 h4,
 a,
 button {
-  font-family: $heading-font-family;
+  font-family: $base-font-family;
 }
 h1 {
   font-size: $h1-font-size;
@@ -32,7 +33,7 @@ button {
 }
 a {
   text-decoration: none;
-  color: $primary-font;
+  color: $white;
 }
 input {
   font-family: $base-font-family;

@@ -1,0 +1,11 @@
+.main {
+  &--index {
+    height: 100vh;
+    @include flex(column, center);
+    @include background;
+    @include padding;
+    > * {
+      margin: 0.5rem 0;
+    }
+  }
+}

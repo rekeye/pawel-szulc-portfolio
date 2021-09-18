@@ -1,4 +1,8 @@
 .header {
   @include flex($justify: space-between, $align: center);
   @include padding;
+  @include background;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }

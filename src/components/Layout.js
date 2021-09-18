@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
     <>
       <header className='header'>
         <Link to='/'>
-          <h1>{title}</h1>
+          <h2>{title}</h2>
         </Link>
         <button
           className={nav ? "hamburger hamburger--open" : "hamburger"}
@@ -34,7 +34,8 @@ const Layout = ({ children }) => {
         </button>
         <nav className={nav ? "nav nav--open" : "nav"}>
           <Link to='/'>Strona główna</Link>
-          <Link to='/kontakt'>Kontakt</Link>
+          <Link to='/projects'>Projekty</Link>
+          <Link to='/contact'>Kontakt</Link>
         </nav>
       </header>
 

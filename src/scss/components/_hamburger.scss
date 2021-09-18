@@ -12,19 +12,19 @@
   div {
     width: 2rem;
     height: 0.25rem;
-    background: $primary-font;
+    background: $white;
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
-    &:nth-child(1) {
-      transform: rotate(0);
-    }
-    &:nth-child(2) {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    &:nth-child(3) {
-      transform: rotate(0);
+    @for $i from 1 to 3 {
+      &:nth-child(#{$i}) {
+        @if $i == 2 {
+          transform: translateX(0);
+          opacity: 1;
+        } @else {
+          transform: rotate(0);
+        }
+      }
     }
   }
   &--open {

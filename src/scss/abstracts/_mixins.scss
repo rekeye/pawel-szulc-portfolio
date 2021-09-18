@@ -31,13 +31,13 @@
 }
 
 //primary colored background mixin
-@mixin background-primary {
-  background: $primary-background-300;
+@mixin background {
+  background: $primary-background-450;
 }
 
 //default padding mixin
 @mixin padding($size: 1rem) {
-  padding: 0 $size;
+  padding: 0.25rem $size;
 }
 
 @mixin text-center {
