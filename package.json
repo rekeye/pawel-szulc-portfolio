@@ -14,7 +14,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "test": "jest"
   },
   "license": "0BSD",
   "dependencies": {
