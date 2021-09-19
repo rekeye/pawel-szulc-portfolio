@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql, Link } from "gatsby";
+import SEO from "./seo";
 
 const Layout = ({ children }) => {
   const {
@@ -21,6 +22,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <SEO title={title} />
       <header className='header'>
         <Link to='/'>
           <h2>{title}</h2>
