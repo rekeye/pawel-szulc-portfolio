@@ -5,20 +5,34 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     },
   } = await graphql(`
     {
-      projects: allGraphCmsProduct(filter: { stage: { eq: PUBLISHED } }) {
+      projects: allGraphCmsProject(filter: { stage: { eq: PUBLISHED } }) {
         nodes {
-          id
+          title
           slug
+          dateOfCreation
+          description
+          image {
+            url
+            localFile {
+              childImageSharp {
+                gatsbyImageData(width: 400, layout: CONSTRAINED)
+              }
+            }
+          }
         }
       }
     }
   `);
-  nodes.forEach(({ id, slug }) => {
+  nodes.forEach(({ title, slug, dateOfCreation, description, image }) => {
     createPage({
       path: `/projects/${slug}`,
       component: require.resolve("./src/templates/projectPage.js"),
       context: {
-        id,
+        title,
+        slug,
+        dateOfCreation,
+        description,
+        image,
       },
     });
   });
