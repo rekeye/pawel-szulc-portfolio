@@ -7,6 +7,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-sass",
+    "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-sharp",
@@ -19,14 +20,10 @@ module.exports = {
       __key: "images",
     },
     {
-      resolve: "gatsby-source-graphql",
+      resolve: "gatsby-source-graphcms",
       options: {
-        // Arbitrary name for the remote schema Query type
-        typeName: "Project",
-        // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
-        fieldName: "Project",
-        // Url to query from
-        url: process.env.GRAPH_CMS_URL,
+        endpoint: process.env.GRAPHCMS_ENDPOINT,
+        downloadLocalImages: true,
       },
     },
   ],

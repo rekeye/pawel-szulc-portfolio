@@ -1,11 +1,20 @@
 .main {
+  padding-top: 5rem;
+  @include flex(column, $align: center);
   &--index {
     height: 100vh;
+    color: $white;
     @include flex(column, center);
     @include background;
     @include padding;
     > * {
       margin: 0.5rem 0;
+      @include tablet-desktop {
+        width: 50%;
+      }
+      @include desktop {
+        width: 40%;
+      }
     }
   }
 }
