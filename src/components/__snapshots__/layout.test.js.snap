@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Layout Layout component renders correctly 1`] = `
+exports[`Layout renders the tests correctly 1`] = `
 Array [
   <header
     className="header"

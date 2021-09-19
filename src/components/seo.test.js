@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import renderer from "react-test-renderer";
 import { useStaticQuery } from "gatsby";
 
 import Helmet from "react-helmet";
@@ -19,15 +19,8 @@ describe("SEO component", () => {
   });
 
   it("renders the tests correctly", () => {
-    const mockTitle = "Projekty | Paweł Szulc";
-    const mockDescription =
-      "Quis velit esse quis sit nulla. Reprehenderit amet enim reprehenderit voluptate quis officia commodo ex ad.";
+    const tree = renderer.create(<SEO title='Projekty' />).toJSON();
 
-    render(<SEO title='Projekty' />);
-    const { title, metaTags } = Helmet.peek();
-
-    expect(title).toBe(mockTitle);
-    expect(metaTags[0].content).toBe(mockDescription);
-    expect(metaTags.length).toBe(4);
+    expect(tree).toMatchSnapshot();
   });
 });

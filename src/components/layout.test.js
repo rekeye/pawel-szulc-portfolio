@@ -15,7 +15,7 @@ beforeEach(() => {
 });
 
 describe("Layout", () => {
-  it("Layout component renders correctly", () => {
+  it("renders the tests correctly", () => {
     const tree = renderer
       .create(
         <Layout>
