@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout Layout component renders correctly 1`] = `
+Array [
+  <header
+    className="header"
+  >
+    <a
+      href="/"
+    >
+      <h2>
+        Test title
+      </h2>
+    </a>
+    <button
+      className="hamburger"
+      onClick={[Function]}
+    >
+      <div />
+      <div />
+      <div />
+    </button>
+    <nav
+      className="nav"
+    >
+      <a
+        href="/"
+      >
+        Strona główna
+      </a>
+      <a
+        href="/projects"
+      >
+        Projekty
+      </a>
+      <a
+        href="/contact"
+      >
+        Kontakt
+      </a>
+    </nav>
+  </header>,
+  <div />,
+  <footer>
+    © 
+    2021
+    , Szymon Paluch
+  </footer>,
+]
+`;

@@ -4,6 +4,8 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
     title: "Paweł Szulc",
+    description:
+      "Quis velit esse quis sit nulla. Reprehenderit amet enim reprehenderit voluptate quis officia commodo ex ad.",
   },
   plugins: [
     "gatsby-plugin-sass",

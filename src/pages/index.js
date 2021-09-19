@@ -1,5 +1,5 @@
 import * as React from "react";
-import LinkButton from "../components/LinkButton";
+import LinkButton from "../components/linkButton";
 
 // markup
 const IndexPage = () => {
