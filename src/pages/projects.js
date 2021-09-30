@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import Layout from "../components/Layout";
-import Project from "../components/Project";
+import Layout from "../components/layout";
+import Project from "../components/project";
 
 // markup
 const ProjectsPage = ({
@@ -30,11 +30,7 @@ export const query = graphql`
         dateOfCreation
         image {
           url
-          localFile {
-            childImageSharp {
-              gatsbyImageData(width: 400, layout: CONSTRAINED)
-            }
-          }
+          gatsbyImageData(width: 400, layout: CONSTRAINED)
         }
       }
     }

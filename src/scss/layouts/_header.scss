@@ -1,7 +1,7 @@
 .header {
   @include flex($justify: space-between, $align: center);
   @include padding;
-  @include background;
+  background: $primary-background-450;
   position: fixed;
   top: 0;
   width: 100%;

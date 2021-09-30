@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import SEO from "./seo";
+import Hamburger from "./hamburger";
 
 const Layout = ({ children }) => {
   const {
@@ -27,13 +28,7 @@ const Layout = ({ children }) => {
         <Link to='/'>
           <h2>{title}</h2>
         </Link>
-        <button
-          className={nav ? "hamburger hamburger--open" : "hamburger"}
-          onClick={() => setNav(!nav)}>
-          <div />
-          <div />
-          <div />
-        </button>
+        <Hamburger handleNav={setNav} nav={nav} />
         <nav className={nav ? "nav nav--open" : "nav"}>
           <Link to='/'>Strona główna</Link>
           <Link to='/projects'>Projekty</Link>
