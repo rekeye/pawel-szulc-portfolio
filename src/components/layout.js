@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql, Link } from "gatsby";
-import SEO from "./seo";
+import Seo from "./seo";
 import Hamburger from "./hamburger";
 
 const Layout = ({ children }) => {
@@ -18,12 +18,11 @@ const Layout = ({ children }) => {
       }
     }
   `);
-
   const [nav, setNav] = useState(false);
 
   return (
     <>
-      <SEO title={title} />
+      <Seo title={title} />
       <header className='header'>
         <Link to='/'>
           <h2>{title}</h2>

@@ -15,7 +15,7 @@
   }
 }
 //multi purposed flex mixin
-@mixin flex($direction: row, $justify: start, $align: normal) {
+@mixin flex($direction: row, $justify: start, $align: flex-start) {
   display: flex;
   flex-wrap: wrap;
   @if $direction != row {
@@ -24,7 +24,7 @@
   @if $justify != start {
     justify-content: $justify;
   }
-  @if $align != normal {
+  @if $align != flex-start {
     align-items: $align;
   }
 }

@@ -3,8 +3,7 @@ import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const Project = ({ data: { title, slug, dateOfCreation, image } }) => {
-  const imageData = getImage(image.localFile);
-  console.log(imageData);
+  const imageData = getImage(image);
   return (
     <Link className='project' to={`/projects/${slug}`}>
       <article>

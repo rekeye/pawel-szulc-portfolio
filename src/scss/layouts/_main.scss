@@ -3,8 +3,6 @@
   @include flex(column, $align: center);
   &--index {
     height: 100vh;
-    color: $white;
-    background: $black;
     @include flex(column, center);
     @include padding;
     > * {
