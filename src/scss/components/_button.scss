@@ -19,4 +19,24 @@
     background: $button-important;
     color: $white;
   }
+  &--contact {
+    gap: 1rem;
+    @include tablet {
+      height: 100%;
+      width: min(26rem, 50%);
+    }
+    @include flex;
+  }
+  &--facebook {
+    background: $facebook;
+  }
+  &--instagram {
+    background: $instagram;
+  }
+  &--linkedin {
+    background: $linkedin;
+  }
+  span::first-letter {
+    text-transform: uppercase;
+  }
 }

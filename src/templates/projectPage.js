@@ -8,7 +8,7 @@ const projectPage = ({ pageContext }) => {
   const { next, title, dateOfCreation, description, image } = pageContext;
   const imageData = getImage(image);
   return (
-    <Layout classes='main main--project-temp'>
+    <Layout classes='main'>
       <ProjectTitle title={title} date={dateOfCreation} />
       <p>{description}</p>
       <GatsbyImage image={imageData} alt={title} />

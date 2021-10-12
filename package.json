@@ -19,6 +19,7 @@
   },
   "license": "0BSD",
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "gatsby": "^3.13.1",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-image": "^1.4.0",
