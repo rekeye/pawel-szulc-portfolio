@@ -9,12 +9,10 @@ const ProjectsPage = ({
     allGraphCmsProject: { nodes },
   },
 }) => (
-  <Layout>
-    <main className='main main--projects'>
-      {nodes.map((project) => (
-        <Project key={project.slug} data={project} />
-      ))}
-    </main>
+  <Layout classes='main main--projects'>
+    {nodes.map((project) => (
+      <Project key={project.slug} data={project} />
+    ))}
   </Layout>
 );
 

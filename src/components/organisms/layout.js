@@ -4,7 +4,7 @@ import { useStaticQuery, graphql, Link } from "gatsby";
 import Seo from "../molecules/seo";
 import Hamburger from "../atoms/hamburger";
 
-const Layout = ({ children }) => {
+const Layout = ({ classes, children }) => {
   const {
     site: {
       siteMetadata: { title },
@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
         </nav>
       </header>
 
-      {children}
+      <main className={classes}>{children}</main>
 
       <footer>© {new Date().getFullYear()}, Szymon Paluch</footer>
     </>
