@@ -1,25 +1,22 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import Layout from "../components/layout";
-import Project from "../components/project";
+import Layout from "../components/organisms/layout";
+import Project from "../components/molecules/project";
 
 // markup
 const ProjectsPage = ({
   data: {
     allGraphCmsProject: { nodes },
   },
-}) => {
-  console.log(nodes);
-  return (
-    <Layout>
-      <main className='main'>
-        {nodes.map((project) => (
-          <Project key={project.slug} data={project} />
-        ))}
-      </main>
-    </Layout>
-  );
-};
+}) => (
+  <Layout>
+    <main className='main'>
+      {nodes.map((project) => (
+        <Project key={project.slug} data={project} />
+      ))}
+    </main>
+  </Layout>
+);
 
 export const query = graphql`
   {

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql, Link } from "gatsby";
-import Seo from "../components/seo";
-import Hamburger from "../components/atoms/hamburger";
+import Seo from "../molecules/seo";
+import Hamburger from "../atoms/hamburger";
 
 const Layout = ({ children }) => {
   const {

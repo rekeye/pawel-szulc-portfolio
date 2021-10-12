@@ -1,5 +1,5 @@
 import * as React from "react";
-import Layout from "../components/layout";
+import Layout from "../components/organisms/layout";
 
 const projectPage = ({ pageContext }) => {
   const { title, dateOfCreation, description, image } = pageContext;
