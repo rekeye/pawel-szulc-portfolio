@@ -20,15 +20,13 @@ const Seo = ({ description, lang, meta, title }) => {
   );
 
   const metaDescription = description || siteMetadata.description;
-  const defaultTitle = siteMetadata?.title;
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      title={`${title} | Portfolio`}
       meta={[
         {
           name: "charset",

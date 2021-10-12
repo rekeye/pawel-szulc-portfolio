@@ -20,7 +20,7 @@
     color: $white;
   }
   &--contact {
-    gap: 1rem;
+    background: $button;
     @include tablet {
       height: 100%;
       width: calc(min(26rem, 50%));
@@ -36,7 +36,10 @@
   &--linkedin {
     background: $linkedin;
   }
-  span::first-letter {
-    text-transform: uppercase;
+  span {
+    padding-left: 1rem;
+    &::first-letter {
+      text-transform: uppercase;
+    }
   }
 }

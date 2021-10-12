@@ -1,5 +1,6 @@
 .main {
-  min-height: 95vh;
+  padding-top: 5rem;
+  @include flex(column, $align: center);
   padding: 5rem 1rem 0;
   @include flex(column);
   @include tablet-desktop {
@@ -23,7 +24,6 @@
     }
   }
   &--projects {
-    min-height: 0;
     @include tablet {
       display: grid;
     }
