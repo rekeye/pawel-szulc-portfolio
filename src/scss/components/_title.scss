@@ -1,0 +1,5 @@
+.title {
+  &__container {
+    @include flex($justify: space-between);
+  }
+}

@@ -13,27 +13,25 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
           description
           image {
             url
-            localFile {
-              childImageSharp {
-                gatsbyImageData(width: 400, layout: CONSTRAINED)
-              }
-            }
+            gatsbyImageData(width: 400, layout: CONSTRAINED)
           }
         }
       }
     }
   `);
-  nodes.forEach(({ title, slug, dateOfCreation, description, image }) => {
-    createPage({
-      path: `/projects/${slug}`,
-      component: require.resolve("./src/templates/projectPage.js"),
-      context: {
-        title,
-        slug,
-        dateOfCreation,
-        description,
-        image,
-      },
-    });
-  });
+  nodes.forEach(
+    ({ title, slug, dateOfCreation, description, image }, index) => {
+      createPage({
+        path: `/projects/${slug}`,
+        component: require.resolve("./src/templates/projectPage.js"),
+        context: {
+          next: index + 1 === nodes.length ? null : nodes[index + 1].slug,
+          title,
+          dateOfCreation,
+          description,
+          image,
+        },
+      });
+    }
+  );
 };

@@ -6,10 +6,8 @@ const Project = ({ data: { title, slug, dateOfCreation, image } }) => {
   const imageData = getImage(image);
   return (
     <Link className='project' to={`/projects/${slug}`}>
-      <article>
-        <GatsbyImage image={imageData} alt={title} />
-        <p>{`${title}, ${dateOfCreation}`}</p>
-      </article>
+      <GatsbyImage image={imageData} alt={title} />
+      <p>{`${title}, ${dateOfCreation}`}</p>
     </Link>
   );
 };

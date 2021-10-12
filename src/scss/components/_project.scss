@@ -1,10 +1,7 @@
 .project {
   height: 100%;
-  article {
-    height: 100%;
-    @include flex(column, space-between);
-    @include padding;
-  }
+  @include flex(column, space-between);
+  @include padding;
   p {
     padding: 0.75rem 0;
   }
