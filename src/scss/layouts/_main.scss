@@ -23,6 +23,7 @@
     }
   }
   &--projects {
+    min-height: 0;
     @include tablet {
       display: grid;
     }
