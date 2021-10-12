@@ -13,7 +13,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
           description
           image {
             url
-            gatsbyImageData(width: 400, layout: CONSTRAINED)
+            gatsbyImageData(height: 600, layout: CONSTRAINED)
           }
         }
       }

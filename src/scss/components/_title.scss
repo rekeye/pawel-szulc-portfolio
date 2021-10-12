@@ -1,5 +1,6 @@
 .title {
   &__container {
+    width: 100%;
     @include flex($justify: space-between);
   }
 }

@@ -9,16 +9,18 @@ const projectPage = ({ pageContext }) => {
   const imageData = getImage(image);
   return (
     <Layout>
-      <main className='main'>
+      <main className='main main--project-temp'>
         <ProjectTitle title={title} date={dateOfCreation} />
         <p>{description}</p>
         <GatsbyImage image={imageData} alt={title} />
-        {next && (
-          <LinkButton important to={`/projects/${next}`}>
-            Następny projekt
-          </LinkButton>
-        )}
-        <LinkButton to='/projects'>Wróć do listy</LinkButton>
+        <div className='button__group'>
+          {next && (
+            <LinkButton important to={`/projects/${next}`}>
+              Następny projekt
+            </LinkButton>
+          )}
+          <LinkButton to='/projects'>Wróć do listy</LinkButton>
+        </div>
       </main>
     </Layout>
   );
