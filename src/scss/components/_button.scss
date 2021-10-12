@@ -11,7 +11,7 @@
     a {
       @include tablet {
         height: 100%;
-        width: min(25rem, 47.5%);
+        width: calc(min(25rem, 47.5%));
       }
     }
   }
@@ -23,7 +23,7 @@
     gap: 1rem;
     @include tablet {
       height: 100%;
-      width: min(26rem, 50%);
+      width: calc(min(26rem, 50%));
     }
     @include flex;
   }
