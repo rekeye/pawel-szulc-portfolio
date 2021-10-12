@@ -15,4 +15,17 @@
       }
     }
   }
+  &--projects {
+    @include tablet {
+      display: grid;
+    }
+    @include tablet-desktop {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 5rem;
+    }
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 5rem 15rem;
+    }
+  }
 }

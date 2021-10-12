@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/organisms/layout";
-import Project from "../components/molecules/project";
+import Project from "../components/organisms/project";
 
 // markup
 const ProjectsPage = ({
@@ -10,7 +10,7 @@ const ProjectsPage = ({
   },
 }) => (
   <Layout>
-    <main className='main'>
+    <main className='main main--projects'>
       {nodes.map((project) => (
         <Project key={project.slug} data={project} />
       ))}
