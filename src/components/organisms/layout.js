@@ -30,8 +30,8 @@ const Layout = ({ classes, children }) => {
         <Hamburger handleNav={setNav} nav={nav} />
         <nav className={nav ? "nav nav--open" : "nav"}>
           <Link to='/'>Strona główna</Link>
-          <Link to='/projects'>Projekty</Link>
-          <Link to='/contact'>Kontakt</Link>
+          <Link to='/projekty'>Projekty</Link>
+          <Link to='/kontakt'>Kontakt</Link>
         </nav>
       </header>
 

@@ -13,8 +13,8 @@ const IndexPage = ({
       <h1>{heading}</h1>
       <h3>{jobTitles}</h3>
       <p>{about}</p>
-      <LinkButton to='/projects'>Sprawdź moje prace</LinkButton>
-      <LinkButton to='/contact' important>
+      <LinkButton to='/projekty'>Sprawdź moje prace</LinkButton>
+      <LinkButton to='/kontakt' important>
         Kontakt
       </LinkButton>
     </main>

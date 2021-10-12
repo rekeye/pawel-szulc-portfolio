@@ -14,11 +14,11 @@ const projectPage = ({ pageContext }) => {
       <GatsbyImage image={imageData} alt={title} />
       <div className='button__group'>
         {next && (
-          <LinkButton important to={`/projects/${next}`}>
+          <LinkButton important to={`/projekty/${next}`}>
             Następny projekt
           </LinkButton>
         )}
-        <LinkButton to='/projects'>Wróć do listy</LinkButton>
+        <LinkButton to='/projekty'>Wróć do listy</LinkButton>
       </div>
     </Layout>
   );

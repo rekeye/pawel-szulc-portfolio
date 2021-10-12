@@ -22,7 +22,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
   nodes.forEach(
     ({ title, slug, dateOfCreation, description, image }, index) => {
       createPage({
-        path: `/projects/${slug}`,
+        path: `/projekty/${slug}`,
         component: require.resolve("./src/templates/projectPage.js"),
         context: {
           next: index + 1 === nodes.length ? null : nodes[index + 1].slug,
