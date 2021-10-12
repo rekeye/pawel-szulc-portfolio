@@ -13,4 +13,30 @@
     background: $button-important;
     color: $white;
   }
+<<<<<<< Updated upstream
+=======
+  &--contact {
+    background: $button;
+    @include tablet {
+      height: 100%;
+      width: calc(min(26rem, 50%));
+    }
+    @include flex;
+  }
+  &--facebook {
+    background: $facebook;
+  }
+  &--instagram {
+    background: $instagram;
+  }
+  &--linkedin {
+    background: $linkedin;
+  }
+  span {
+    padding-left: 1rem;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+>>>>>>> Stashed changes
 }
