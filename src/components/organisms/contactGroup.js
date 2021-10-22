@@ -9,7 +9,7 @@ const ContactGroup = ({
   instagram,
   linkedin,
 }) => (
-  <div>
+  <div className='button__group--contact'>
     {email && <ContactType type='email' content={email} />}
     {phoneNumber && <ContactType type='phone' content={phoneNumber} />}
     {twitter && <ContactType type='twitter' content={twitter} />}

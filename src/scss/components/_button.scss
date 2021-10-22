@@ -2,16 +2,23 @@
   background: $primary-background-450;
   color: $white;
   width: 100%;
-  margin: 0.5rem 0;
+  margin-top: 0.5rem;
   font-size: $h4-font-size;
   padding: 0.75rem;
   @include text-center;
   &__group {
+    width: 100%;
     @include flex(row-reverse, space-between);
+    @include tablet {
+      width: 100%;
+    }
     a {
       @include tablet {
         height: 100%;
       }
+    }
+    &--contact {
+      width: fit-content;
     }
   }
   &--important {
@@ -19,11 +26,13 @@
     color: $white;
   }
   &--contact {
+    width: 100%;
     background: $button;
     @include tablet {
       height: 100%;
     }
     @include flex;
+    flex-wrap: nowrap;
   }
   &--facebook {
     background: $facebook;

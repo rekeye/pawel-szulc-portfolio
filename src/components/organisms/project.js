@@ -7,7 +7,7 @@ const Project = ({ data: { title, slug, dateOfCreation, image } }) => {
   return (
     <Link className='project' to={`/projekty/${slug}`}>
       <GatsbyImage image={imageData} alt={title} />
-      <p>{`${title}, ${dateOfCreation}`}</p>
+      <p>{dateOfCreation ? `${title}, ${dateOfCreation}` : title}</p>
     </Link>
   );
 };
