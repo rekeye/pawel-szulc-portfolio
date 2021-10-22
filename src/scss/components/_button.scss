@@ -23,7 +23,6 @@
     background: $button;
     @include tablet {
       height: 100%;
-      width: calc(min(26rem, 50%));
     }
     @include flex;
   }
