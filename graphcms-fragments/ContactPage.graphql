@@ -8,6 +8,7 @@ fragment ContactPage on ContactPage {
   encouragement
   phoneNumber
   email
+  twitter
   facebook
   instagram
   linkedIn

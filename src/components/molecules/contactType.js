@@ -2,6 +2,7 @@ import React from "react";
 import OutLink from "../atoms/outLink";
 import Phone from "../atoms/phone";
 import Email from "../atoms/email";
+import Twitter from "../atoms/twitter";
 import Facebook from "../atoms/facebook";
 import Instagram from "../atoms/instagram";
 import LinkedIn from "../atoms/linkedin";
@@ -27,6 +28,7 @@ const ContactType = ({ type, content }) => {
         <OutLink href={content} classType={type}>
           {
             {
+              twitter: <Twitter />,
               facebook: <Facebook />,
               instagram: <Instagram />,
               linkedin: <LinkedIn />,

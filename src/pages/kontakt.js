@@ -37,6 +37,7 @@ export const query = graphql`
       encouragement
       phoneNumber
       email
+      twitter
       facebook
       instagram
       linkedIn
