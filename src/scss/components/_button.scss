@@ -11,7 +11,6 @@
     a {
       @include tablet {
         height: 100%;
-        width: calc(min(25rem, 47.5%));
       }
     }
   }
