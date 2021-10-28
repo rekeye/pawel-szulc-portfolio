@@ -1,54 +1,41 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Pawel Szulc Portfolio
+![Website status](https://img.shields.io/website?down_color=red&up_color=green&url=https%3A%2F%2Fpawelszulc.gatsbyjs.io%2F)
+![Last commit](https://img.shields.io/github/last-commit/rekeye/pawel-szulc-portfolio)
 
-## 🚀 Quick start
+## Table of contents
+* [General information](#general-information)
+* [Used technologies](#used-technologies)
+* [Access to deployment](#access-to-deployment)
 
-1.  **Create a Gatsby site.**
+## General information
+This project is an portfolio site created for a beginner graphic designer. Project was created using technologies such as GatsbyJS for more information check out the used technologies tab [down below](#used-technologies). 
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## Used technologies
+* [Gatsby](#gatsby)
+* [React helmet](#react-helmet)
+* [React icons](#react-icons)
+* [GraphQL](#graphql)
+* [GraphCMS](#graphcms)
+* [Scss](#scss)
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+### Gatsby
+Client side rendering handled by Gatsby. For more info check out official [docs](https://www.gatsbyjs.com/docs/). 
 
-2.  **Start developing.**
+### React helmet
+React library handling multi site redirection. For more info check out official [docs](https://www.npmjs.com/package/react-helmet/).
 
-    Navigate into your new site’s directory and start it up.
+### React icons
+React library containing many svg icons. For more info check out official [docs](https://react-icons.github.io/react-icons/).
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+### GraphQL
+A query language for connection with [GraphCMS](#graphcms) api. For more info check out official [docs](https://graphql.org/).
 
-3.  **Open the code and start customizing!**
+### GraphCMS
+Headless CMS providing back-end data using an api service. For more info check out official [docs](https://graphcms.com/docs).
 
-    Your site is now running at http://localhost:8000!
+### Scss
+A css extension language alowing the use of variables, functions, modules and nested rules with full css functionality. For more info check out official [docs](https://sass-lang.com/documentation).
 
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+## Access to deployment
+Site is deployed on gatsby cloud:
+[Check it out](https://pawelszulc.gatsbyjs.io/)
